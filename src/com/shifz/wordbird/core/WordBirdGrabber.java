@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  */
 public class WordBirdGrabber {
 
-    private static final String FIRST_DELIMITER = "<div class=\"p402_hide\">"; //Used to divide junk html from result - HEAD
+    private static final String FIRST_DELIMITER = "<td width=\"340\" valign=\"top\">"; //Used to divide junk html from result - HEAD
     private static final String SECOND_DELIMITER = "<div id=\"mobilebottombannerad\">"; //Used to divide junk html from result -TAIL
     private static final String THIRD_DELIMITER = "<div class=\"wordtype\">"; //Used to divide word types
     private static final String FOURTH_DELIMITER = "</div>";
@@ -28,6 +28,8 @@ public class WordBirdGrabber {
     private static final Pattern noMatchFoundPattern = Pattern.compile("No (?:words|definitions|examples) found\\.");
     private static final String SENTENCE_GRABBER_REGEX = "<p>(.+).";
     private static final String SINGLE_LINE_GRABBER_REGEX = "(.+)\\.";
+    private static final String SYMBOL_UK = "UK";
+    private static final String SYMBOL_US = "US";
     private final Request request;
     private final Pattern grabPattern;
 
@@ -88,7 +90,6 @@ public class WordBirdGrabber {
 
         if (networkResponse != null) {
 
-            //TODO: Debug from here.
             try {
 
                 final JSONArray jResponse = new JSONArray();
@@ -123,7 +124,10 @@ public class WordBirdGrabber {
                                 word = removeHtml(word);
                             }
 
-                            jBody.put(word);
+                            if (!isInvalidWord(word)) {
+                                jBody.put(word);
+                            }
+
                         }
 
                         jNode.put(KEY_BODY, jBody);
@@ -142,6 +146,18 @@ public class WordBirdGrabber {
 
         }
         return null;
+    }
+
+    /**
+     * To check if the passed word is valid.
+     *
+     * @param word
+     * @return TRUE on invalid , FALSE on VALID
+     */
+    private boolean isInvalidWord(String word) {
+        return word == null ||
+                word.equals(SYMBOL_UK) ||
+                word.equals(SYMBOL_US);
     }
 
     public Matcher getMatcher(String wordTypeNode) {
