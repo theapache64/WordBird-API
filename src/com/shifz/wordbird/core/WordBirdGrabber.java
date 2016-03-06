@@ -95,7 +95,7 @@ public class WordBirdGrabber {
                     final String wordTypeName = wordTypeNode.split(FOURTH_DELIMETER)[0];
                     if (isNoMatchFound(wordTypeNode)) {
                         //No word found
-                        //System.out.println("No match found :(");
+                       System.out.println("No match found :(");
                         return null;
                     }
 
@@ -114,7 +114,7 @@ public class WordBirdGrabber {
 
                             String word = synonymMatcher.group(1);
 
-                            //System.out.println("Result: " + word);
+                           System.out.println("Result: " + word);
 
                             if (request.isClearHtml()) {
                                 word = removeHtml(word);

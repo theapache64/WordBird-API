@@ -7,9 +7,6 @@ import javax.sql.DataSource;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-/**
- * Created by Shifar Shifz on 10/18/2015.
- */
 
 /**
  * Created by Shifar Shifz on 10/13/2015.
