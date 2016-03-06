@@ -16,7 +16,7 @@ import java.sql.SQLException;
  */
 public class Connection {
 
-    public static final boolean debugMode = false;
+    public static final boolean debugMode = true;
 
     public static java.sql.Connection getConnection() {
         try {
@@ -37,7 +37,7 @@ public class Connection {
     private static final String LC_HOST = "localhost";
     private static final String LC_PORT = "3306";
     private static final String LC_USERNAME = "root";
-    private static final String LC_PASSWORD = "passroot";
+    private static final String LC_PASSWORD = "mike";
 
 
     //Remote credentials

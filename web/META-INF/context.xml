@@ -9,7 +9,7 @@
               removeAbandonedTimeout="10"
               maxIdle="30"
               maxWait="10000"
-              username="root" password="passroot" driverClassName="com.mysql.jdbc.Driver"
+              username="root" password="mike" driverClassName="com.mysql.jdbc.Driver"
               url="jdbc:mysql://localhost:3306/wordbird"/>
 
 </Context>
