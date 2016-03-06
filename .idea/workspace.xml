@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebc903d3-f532-408a-98cb-4418b6bcc8ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shifz/wordbird/database/Connection.java" afterPath="$PROJECT_DIR$/src/com/shifz/wordbird/database/Connection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shifz/wordbird/Lab.java" afterPath="$PROJECT_DIR$/src/com/shifz/wordbird/Lab.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shifz/wordbird/utils/NetworkHelper.java" afterPath="$PROJECT_DIR$/src/com/shifz/wordbird/utils/NetworkHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shifz/wordbird/core/WordBirdGrabber.java" afterPath="$PROJECT_DIR$/src/com/shifz/wordbird/core/WordBirdGrabber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shifz/wordbird/servlets/WordBirdServlet.java" afterPath="$PROJECT_DIR$/src/com/shifz/wordbird/servlets/WordBirdServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WordBird-API.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,8 +60,8 @@
       <file leaf-file-name="WordBirdGrabber.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/shifz/wordbird/core/WordBirdGrabber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.1622465">
-              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2527301">
+              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -134,6 +129,7 @@
         <option value="$PROJECT_DIR$/src/com/shifz/wordbird/database/Connection.java" />
         <option value="$PROJECT_DIR$/src/com/shifz/wordbird/servlets/WordBirdServlet.java" />
         <option value="$PROJECT_DIR$/src/com/shifz/wordbird/Lab.java" />
+        <option value="$PROJECT_DIR$/src/com/shifz/wordbird/core/WordBirdGrabber.java" />
       </list>
     </option>
   </component>
@@ -553,12 +549,12 @@
       <created>1457250468647</created>
       <option name="number" value="Default" />
       <updated>1457250468647</updated>
-      <workItem from="1457250469822" duration="2869000" />
+      <workItem from="1457250469822" duration="2926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2869000" />
+    <option name="totallyTimeSpent" value="2926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -669,8 +665,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shifz/wordbird/core/WordBirdGrabber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1622465">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.2527301">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding />
         </state>
       </provider>

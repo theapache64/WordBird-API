@@ -15,10 +15,10 @@ import java.util.regex.Pattern;
  */
 public class WordBirdGrabber {
 
-    private static final String FIRST_DELIMETER = "<div class=\"p402_hide\">"; //Used to divide junk html from result - HEAD
-    private static final String SECOND_DELIMETER = "<div id=\"mobilebottombannerad\">"; //Used to divide junk html from result -TAIL
-    private static final String THIRD_DELIMETER = "<div class=\"wordtype\">"; //Used to divide word types
-    private static final String FOURTH_DELIMETER = "</div>";
+    private static final String FIRST_DELIMITER = "<div class=\"p402_hide\">"; //Used to divide junk html from result - HEAD
+    private static final String SECOND_DELIMITER = "<div id=\"mobilebottombannerad\">"; //Used to divide junk html from result -TAIL
+    private static final String THIRD_DELIMITER = "<div class=\"wordtype\">"; //Used to divide word types
+    private static final String FOURTH_DELIMITER = "</div>";
     private static final String KEY_HEAD = "head";
     private static final String KEY_BODY = "body";
     private static final String BASE_URL_FORMAT = "http://wordhippo.com/what-is/%s/%s.html";
@@ -63,9 +63,9 @@ public class WordBirdGrabber {
     }
 
     private static String[] getWordTypeNodes(String networkResponse) {
-        String resultNode = networkResponse.split(FIRST_DELIMETER)[1];
-        resultNode = resultNode.split(SECOND_DELIMETER)[0];
-        return resultNode.split(THIRD_DELIMETER);
+        String resultNode = networkResponse.split(FIRST_DELIMITER)[1];
+        resultNode = resultNode.split(SECOND_DELIMITER)[0];
+        return resultNode.split(THIRD_DELIMITER);
     }
 
     private static String removeHtml(String group) {
@@ -92,13 +92,12 @@ public class WordBirdGrabber {
 
                 for (final String wordTypeNode : getWordTypeNodes(networkResponse)) {
 
-                    final String wordTypeName = wordTypeNode.split(FOURTH_DELIMETER)[0];
+                    final String wordTypeName = wordTypeNode.split(FOURTH_DELIMITER)[0];
                     if (isNoMatchFound(wordTypeNode)) {
                         //No word found
-                       System.out.println("No match found :(");
+                        System.out.println("No match found :(");
                         return null;
                     }
-
 
 
                     if (!wordTypeName.trim().isEmpty()) {
@@ -114,7 +113,7 @@ public class WordBirdGrabber {
 
                             String word = synonymMatcher.group(1);
 
-                           System.out.println("Result: " + word);
+                            System.out.println("Result: " + word);
 
                             if (request.isClearHtml()) {
                                 word = removeHtml(word);
