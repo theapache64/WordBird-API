@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebc903d3-f532-408a-98cb-4418b6bcc8ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ebc903d3-f532-408a-98cb-4418b6bcc8ed" name="Default" comment="" />
     <ignored path="WordBird-API.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -691,12 +688,12 @@
       <option name="number" value="Default" />
       <updated>1457250468647</updated>
       <workItem from="1457250469822" duration="3807000" />
-      <workItem from="1457280741776" duration="1794000" />
+      <workItem from="1457280741776" duration="1919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5601000" />
+    <option name="totallyTimeSpent" value="5726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
