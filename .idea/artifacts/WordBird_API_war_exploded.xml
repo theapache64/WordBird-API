@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WordBird-API:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/WordBird_API_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="WordBird-API/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WordBird-API" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
