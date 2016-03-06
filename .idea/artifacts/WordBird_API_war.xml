@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WordBird-API:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/WordBird_API_war</output-path>
+    <root id="archive" name="WordBird-API_war.war">
+      <element id="artifact" artifact-name="WordBird-API:war exploded" />
+    </root>
+  </artifact>
+</component>
