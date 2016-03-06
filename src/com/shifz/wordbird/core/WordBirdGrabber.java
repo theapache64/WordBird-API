@@ -84,8 +84,11 @@ public class WordBirdGrabber {
         final NetworkHelper networkHelper = new NetworkHelper(url);
         final String networkResponse = networkHelper.getResponse();
 
+        System.out.println("Network response : " + networkResponse);
+
         if (networkResponse != null) {
 
+            //TODO: Debug from here.
             try {
 
                 final JSONArray jResponse = new JSONArray();
@@ -93,6 +96,7 @@ public class WordBirdGrabber {
                 for (final String wordTypeNode : getWordTypeNodes(networkResponse)) {
 
                     final String wordTypeName = wordTypeNode.split(FOURTH_DELIMITER)[0];
+
                     if (isNoMatchFound(wordTypeNode)) {
                         //No word found
                         System.out.println("No match found :(");
