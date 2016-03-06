@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+    <Resource name="jdbc/wordbird"
+              auth="Container"
+              type="javax.sql.DataSource"
+              maxActive="100"
+              removeAbandoned="true"
+              removeAbandonedTimeout="10"
+              maxIdle="30"
+              maxWait="10000"
+              username="root" password="passroot" driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/wordbird"/>
+
+</Context>
